@@ -1,0 +1,41 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <div class="container-opcoes">
+        <nav class="opcoes">
+          <ul>
+            <li>
+              <a mat-list-item routerLink="/home" routerLinkActive="active">home</a>
+            </li>
+            <li>
+              <a mat-list-item routerLink="/hamburguers" routerLinkActive="active">Hamburguers</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="dialog">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <header>
+        <h1>Kowalski's<span> Restaurante</span></h1>
+      </header>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <div class="lista">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

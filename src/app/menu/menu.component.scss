@@ -1,0 +1,38 @@
+.sidenav-container {
+  height: 100%;
+  background-color: white;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  background-color: red;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+header {
+  color: red;
+}
+
+header span {
+  color: white;
+}
+
+.lista {
+  color: aqua;
+  position: sticky;
+  max-width: 300px;
+  margin: 30px;
+}
+
+.opcoes{
+  color: white;
+}
