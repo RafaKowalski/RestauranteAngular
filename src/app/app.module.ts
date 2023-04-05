@@ -18,14 +18,20 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatTableModule } from '@angular/material/table'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { LayoutModule } from '@angular/cdk/layout';
-import { MenuComponent } from './menu/menu.component'
+import { MenuComponent } from './menu/menu.component';
+import { MassasComponent } from './massas/massas.component';
+import { SaladasComponent } from './saladas/saladas.component';
+import { CarnesComponent } from './carnes/carnes.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HamburguersComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    MassasComponent,
+    SaladasComponent,
+    CarnesComponent
   ],
   imports: [
     BrowserModule,
