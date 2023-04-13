@@ -21,7 +21,8 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MenuComponent } from './menu/menu.component';
 import { MassasComponent } from './massas/massas.component';
 import { SaladasComponent } from './saladas/saladas.component';
-import { CarnesComponent } from './carnes/carnes.component'
+import { CarnesComponent } from './carnes/carnes.component';
+import { BebidasComponent } from './bebidas/bebidas.component'
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CarnesComponent } from './carnes/carnes.component'
     MenuComponent,
     MassasComponent,
     SaladasComponent,
-    CarnesComponent
+    CarnesComponent,
+    BebidasComponent
   ],
   imports: [
     BrowserModule,
